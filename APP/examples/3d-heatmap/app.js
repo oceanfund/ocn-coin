@@ -7,11 +7,17 @@ import DeckGLOverlay from './deckgl-overlay.js';
 import {csv as requestCsv} from 'd3-request';
 
 // Set your mapbox token here
-const MAPBOX_TOKEN = process.env.MapboxAccessToken; // eslint-disable-line
+//const MAPBOX_TOKEN = process.env.MapboxAccessToken; // eslint-disable-line
+const MAPBOX_TOKEN = 'pk.eyJ1IjoiY3lyaWxsdXR0ZXJvZHQiLCJhIjoiY2pjcWtxcGRoMGYybTJybzJkbjVzeGdzdCJ9.fbcG6ubIoQnRypab9qUQCQ';// eslint-disable-line
 
 // Source data CSV
-const DATA_URL =
+//const DATA_URL =
   'https://raw.githubusercontent.com/uber-common/deck.gl-data/master/examples/3d-heatmap/heatmap-data.csv'; // eslint-disable-line
+
+const DATA_URL = '/latlng.csv'
+// Source data CSV
+//const DATA_URL = 'file:///Users/neurobotics/ocn-coin/deck.gl-master/examples/react/OCN/heatmap-data.csv'; // eslint-disable-line
+
 
 class Root extends Component {
   constructor(props) {
