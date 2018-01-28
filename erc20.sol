@@ -1,6 +1,6 @@
 pragma solidity ^0.4.18;
 
-contract EIP20Interface {
+contract ERC20Interface {
     /* This is a slight change to the ERC20 base standard.
     function totalSupply() constant returns (uint256 supply);
     is replaced with:
@@ -46,7 +46,7 @@ contract EIP20Interface {
     event Approval(address indexed _owner, address indexed _spender, uint256 _value);
 }
 
-contract EIP20 is EIP20Interface {
+contract ERC20 is ERC20Interface {
 
     uint256 constant private MAX_UINT256 = 2**256 - 1;
     mapping (address => uint256) public balances;
